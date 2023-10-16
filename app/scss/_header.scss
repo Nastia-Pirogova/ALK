@@ -1,0 +1,28 @@
+.header {
+  padding: 24px 0;
+
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+
+    &__btn {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    &__btns{
+      display: flex;
+      gap: 24px;
+    }
+    &__btn-1{
+      color: $white;
+      padding: 10px;
+    }
+  }
+}
+
+.header-inner__btn-1{
+  display: none;
+}

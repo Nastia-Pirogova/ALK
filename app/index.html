@@ -10,65 +10,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/swiper@10.3.1/modules/effect-fade.min.css" rel="stylesheet">
 </head>
 <body class="body">
-<!--<header class="header">-->
-<!--    <div class="container">-->
-<!--        <div class="header-inner">-->
-<!--            <a href="" class="">-->
-<!--                <img src="images/logo_klas.svg" alt="" class="header-inner__link-logo">-->
-<!--            </a>-->
-<!--            <ul class="header-inner__list">-->
-<!--                <li class="header-inner__list-item"><a href="">Головна</a></li>-->
-<!--                <li class="header-inner__list-item"><a href="">Хто ми</a></li>-->
-<!--                <li class="header-inner__list-item"><a href="">Наші проєкти</a></li>-->
-<!--                <li class="header-inner__list-item"><a href="">Новини</a></li>-->
-<!--                <li class="header-inner__list-item"><a href="">Бібліотека</a></li>-->
-<!--                <li class="header-inner__list-item"><a href="">Контакти</a></li>-->
-<!--            </ul>-->
-<!--            <button class="header-inner__btn-burger js-open-menu" data-modal-open="">-->
-<!--                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 31 32" fill="none">-->
-<!--                    <path d="M3.875 8.00195H27.125M3.875 16.002H27.125M3.875 24.002H27.125" stroke="#070707"-->
-<!--                          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>-->
-<!--                </svg>-->
-<!--            </button>-->
-<!--            <button class="header-inner__btn-close-menu js-open-menu" data-modal-close="">-->
-<!--                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">-->
-<!--                    <path d="M1.729 14.9911L8.50121 8.00043L15.2734 14.9911M15.2734 1.00977L8.49992 8.00043L1.729 1.00977"-->
-<!--                          stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>-->
-<!--                </svg>-->
-<!--            </button>-->
-<!--            <button class="header-inner__btn">-->
-<!--                Підтримати нас-->
-<!--            </button>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</header>-->
-<!--<div class="mobile-menu js-menu-container is-hidden" data-modal="">-->
+<canvas></canvas>
+<header class="header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="" class="">
+                <img src="images/logo.svg" alt="" class="header-inner__link-logo">
+            </a>
+            <div class="header-inner__btns">
+            <button class="header-inner__btn header-inner__btn-1">
+               EN
+            </button>
+            <button class="header-inner__btn">
+                <svg width="53" height="33" viewBox="0 0 53 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" y="4" width="28.2857" height="2.43902" fill="#FDF9F9"/>
+                    <rect x="4" y="14.9757" width="45" height="3.04878" fill="#FDF9F9"/>
+                    <rect x="4" y="26.5609" width="36.6429" height="2.43902" fill="#FDF9F9"/>
+                </svg>
+            </button>
+            </div>
+        </div>
+    </div>
+</header>
 
-<!--    <div class="mobile-menu-container">-->
-<!--        <ul class="mobile-menu__list list ">-->
-<!--            <li class="mobile-menu__item ">-->
-<!--                <a class="mobile-menu__item-link link " href="">Хто ми</a>-->
-<!--            </li>-->
-<!--            <li class="mobile-menu__item ">-->
-<!--                <a class="mobile-menu__item-link link " href="">Наші проєкти</a>-->
-<!--            </li>-->
-<!--            <li class="mobile-menu__item ">-->
-<!--                <a class="mobile-menu__item-link link " href="">Новини</a>-->
-<!--            </li>-->
-<!--            <li class="mobile-menu__item ">-->
-<!--                <a class="mobile-menu__item-link link " href="">Бібліотека</a>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--        <button class="mobile-menu__btn">-->
-<!--            Підтримати нас-->
-<!--        </button>-->
-<!--    </div>-->
-</div>
-<main>  <canvas></canvas>
+<main>
     <section class="hero">
-
         <div class="container">
             <div class="hero-inner">
                 <div class="section-caption">
@@ -87,6 +58,54 @@
             </div>
         </div>
     </section>
+
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages-inner">
+                <div class="section-caption">
+                    <svg class="section-svg" width="7" height="28" viewBox="0 0 7 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="7" height="28" rx="3.5" fill="#FDF9F9"/>
+                    </svg>
+                    <div class="number-section">02</div>
+                    <div class="number-name violet">Advantages</div>
+                </div>
+
+                <ul class="advantages-inner__list swiper">
+                    <li class="advantages-inner__list-item">
+                        <div class="advantages-inner__list-item-num">01</div>
+                        <h2 class="advantages-inner__list-item-title">Workforce</h2>
+                        <p class="advantages-inner__list-item-descr">Our talented professionals are drawn to the industry due to the exciting and dynamic nature of IT work.</p>
+                    </li>
+                    <li class="advantages-inner__list-item">
+                        <div class="advantages-inner__list-item-num">02</div>
+                        <h2 class="advantages-inner__list-item-title">Efficiency</h2>
+                        <p class="advantages-inner__list-item-descr">Our IT solutions can significantly improve the efficiency of businesses.</p>
+                    </li>
+                    <li class="advantages-inner__list-item">
+                        <div class="advantages-inner__list-item-num">03</div>
+                        <h2 class="advantages-inner__list-item-title">Global Reach</h2>
+                        <p class="advantages-inner__list-item-descr">Technology transcends geographical boundaries, allowing our IT company to provide services to clients worldwide.  </p>
+                    </li>
+                    <li class="advantages-inner__list-item">
+                        <div class="advantages-inner__list-item-num">04</div>
+                        <h2 class="advantages-inner__list-item-title">Social Impact</h2>
+                        <p class="advantages-inner__list-item-descr">Our company has the potential to create a positive social impact by developing technology solutions that address societal challenges.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<div class="title-descr">
+        <div class="container">
+            <div class="title-descr__inner">
+                <img class="title-descr__inner-decor-1" src="images/decor-1.svg" alt="">
+            The best customer service is when end users don’t need to reach out to the help desk
+                <img  class="title-descr__inner-decor-2" src="images/decor-2.svg" alt="">
+            </div>
+    </div>
+</div>
+
 <!--    <section class="about-us">-->
 <!--        <div class="container">-->
 <!--            <div class="about-us-inner">-->
@@ -113,7 +132,13 @@
 <!--        </div>-->
 <!--    </section>-->
 </main>
-<script src="js/main.js"></script>
+<!--<script src="js/main.js"></script>-->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
 <script src="js/gradiet.js"></script>
+<script src="js/advantages-slider.js" type="module" ></script>
+
 </body>
 </html>
