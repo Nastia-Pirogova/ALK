@@ -1,0 +1,94 @@
+@media screen and (min-width: 768px) {
+
+  .number-section{
+    font-size: 18px;
+    padding: 10px 18px;
+    width: 77px;
+    margin: 0 0 0 18px;
+  }
+  .number-name{
+    font-size: 18px;
+    width: 160px;
+  }
+
+
+  .hero{
+    padding: 10px 0 58px 0;
+    &-inner{
+      &__title {
+        font-size: 96px;
+        margin: 128px 0 16px 0;
+      }
+      &__caption{
+        font-size: 24px;
+        margin:0 20px 128px 20px;
+      }
+      &__btn{
+        padding: 18px;
+        width: 280px;
+        font-size: 22px;
+      }
+    }
+  }
+  .hero-btn-1{
+    margin: 0 0 18px 0;
+  }
+
+
+}
+
+@media screen and (min-width: 1240px) {
+  .number-section{
+    font-size: 20px;
+    width: 77px;
+  }
+  .number-name{
+    font-size: 20px;
+    width: 160px;
+  }
+
+
+  .hero{
+    padding: 64px 0 100px 0;
+    &-inner{
+      &__title {
+        font-size: 115px;
+        margin: 120px 0 24px 0;
+      }
+      &__caption{
+        margin:0 28px 100px 28px;
+        width: 803px;
+      }
+      &__btn{
+        padding: 18px;
+        width: 280px;
+        font-size: 22px;
+      }
+    }
+  }
+  .hero-btn-1{
+    margin: 0;
+  }
+  .hero-btns{
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+
+  .hero{
+    padding: 64px 0 100px 0;
+    &-inner{
+      &__title {
+        font-size: 128px;
+        margin: 144px 0 24px 147px;
+      }
+      &__caption{
+        margin:0 28px 152px 202px;
+      }
+    }
+  }
+}
