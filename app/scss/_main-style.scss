@@ -44,6 +44,7 @@
 }
 
 .advantages{
+  margin: 0 0 35px 0;
   &-inner{
     &__list{
       margin: 32px 0 0 0;
@@ -54,6 +55,7 @@
         border-radius: 32px;
         border: 3px solid $violet;
         padding: 53.5px 35px;
+        height: 332px !important;
         &-num{
           color: rgba(200, 189, 189, 0.12);
           font-size: 54px;
@@ -101,4 +103,77 @@
     }
   }
 
+}
+
+.work-stages-number-name{
+  width: 130px;;
+}
+
+.work-stages{
+  background-color: $violet;
+  padding: 32px 0;
+  &-inner{
+
+    &__list{
+      margin: 32px 0;
+      display: block;
+      &-item{
+        margin: 0 0 40px 0;
+        &-num{
+          font-size: 45px;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+        &-title{
+          font-size: 24px;
+          font-weight: 700;
+          padding: 24px 0;
+          text-transform: uppercase;
+        }
+        &-descr{
+          font-family: Poppins,sans-serif;
+          font-size: 14px;
+          font-weight: 500;
+        }
+        &-content{
+          width: 305px;
+        }
+      }
+  }
+  }
+
+}
+
+
+.services{
+  margin: 32px 0;
+  &-inner{
+    margin: 32px 0;
+
+    &__content{
+      margin: 0 0 24px 0;
+      &-box-1{
+        position: relative;
+      }
+      &-title{
+        font-size: 34px;
+        font-weight: 700;
+        margin: 0 0 24px 0;
+        text-transform: uppercase;
+      }
+      &-descr{
+        font-family: Poppins,sans-serif;
+        font-size: 16px;
+      }
+      &-decor-2{
+        display: none;
+      }
+      &-decor-1{
+        display: none;
+      }
+    }
+    &__content-2{
+      padding: 60px 0;
+    }
+  }
 }
