@@ -1,15 +1,14 @@
-const swiper1 = new Swiper('.swiper', {
-    // slidesPerView: 'auto',
+const swiper3 = new Swiper('.swiper-reviews', {
     spaceBetween: 30,
     autoplay: {
         delay: 3000,
     },
     freeMode: true,
     breakpoints: {
-        320: {
-            slidesPerView: 'auto',
-            spaceBetween: 30,
-        },
+        // 320: {
+        //     slidesPerView: 'auto',
+        //     spaceBetween: 30,
+        // },
         768: {
             slidesPerView: 1.5,
         },

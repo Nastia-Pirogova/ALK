@@ -122,6 +122,7 @@
 
   .services{
     margin: 64px 0;
+    padding: 0 0 20px 0;
     &-inner{
       margin: 64px 0;
 
@@ -172,6 +173,68 @@
     display: block;
   }
 
+  .portfolio{
+    &-inner{
+      gap: 80px;
+      &__project-opt {
+        margin: 24px 0 0 0;
+      }
+      &__img{
+        width: 100%;
+        height: 542px;
+      }
+      &__project-name {
+        font-size: 48px;
+      }
+
+      &-btn{
+        font-size: 22px;
+        padding: 20px 77px;
+        width: 280px;
+      }
+      &__project-arrow {
+        width: 84px;
+        height: 84px;
+      }
+    }
+  }
+
+  .reviews-inner__list{
+    display: flex;
+    flex-direction: row;
+  }
+  .reviews-inner__list-item{
+    height: auto !important;
+    padding: 53px 95px;
+  }
+  .reviews-inner__list-item-descr {
+    margin: 0 0 20px 0;
+    font-size: 20px;
+  }
+  .reviews-inner__list-item-r{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+  a.reviews-inner__list-item-btn {
+    width: fit-content;
+  }
+
+
+  .technologies{
+    margin: 84px 0;
+    &-inner{
+      padding: 64px 0;
+      &__list{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        &-item-img {
+          width: 110px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1240px) {
@@ -339,6 +402,49 @@
     display: block;
     width: 285px;
   }
+
+  .services {
+    padding: 0 0 104px 0;
+  }
+
+  .portfolio{
+    &-inner{
+      gap: 64px;
+      padding: 64px 0;
+      &__project{
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      &__img {
+        width: 785px;
+        height: 720px;
+      }
+      &__project-opt {
+        display: flex;
+        justify-content: space-between;
+        width: 558px;
+        margin: 0 20px 0 0;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      &-btn{
+        font-size: 22px;
+        padding: 20px 80px;
+        width: 300px;
+      }
+      &__project-arrow {
+        width: 124px;
+        height: 124px;
+      }
+    }
+  }
+
+
+  .reviews-inner__list-item{
+    height: auto !important;
+    padding: 53px 50px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .title-descr__inner-decor-2 {
@@ -367,6 +473,21 @@
   }
   .services-inner__content-2 {
     padding: 140px 0;
+  }
+
+  .portfolio{
+    &-inner{
+      gap: 32px;
+      &__project{
+        justify-content: space-between;
+      }
+      &__img {
+        width: 1000px;
+      }
+      &__project-opt {
+        margin: 0 40px 0 0;
+      }
+    }
   }
 }
 
@@ -411,7 +532,7 @@
   }
   .title-descr__inner-decor-2 {
     bottom: -10px;
-    right: 48%;
+    right: 10%;
   }
 
 
@@ -441,5 +562,23 @@
     right: 0;
     top: 0;
     width: 380px;
+  }
+
+  .technologies{
+    margin: 84px 0;
+    &-inner{
+      padding: 64px 0;
+      &__list{
+        display: flex;
+        align-items: center;
+        gap: 55px !important;
+        &-item{
+          width: 130px !important;
+        }
+        &-item-img {
+          width: 130px;
+        }
+      }
+    }
   }
 }

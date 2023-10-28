@@ -119,3 +119,16 @@ canvas {
 .violet{
   background-color: $violet;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $violet;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: $grey;
+}
