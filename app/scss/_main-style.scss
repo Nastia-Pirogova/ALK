@@ -1,6 +1,6 @@
 .hero{
   padding: 17px 0 50px 0;
-  height: 100vh;
+  //height: 100vh;
   display: block;
   &-inner{
     &__title {
@@ -275,4 +275,114 @@
       }
     }
   }
+}
+
+ul.technologies-inner__list {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  overflow-x: auto;
+}
+
+ul.technologies-inner__list::-webkit-scrollbar {
+  width: 12px; /* Ширина вертикального скроллбара */
+}
+
+ul.technologies-inner__list::-webkit-scrollbar-thumb {
+  background-color: $black;  /* Цвет ползунка скроллбара */
+  border-radius: 6px; /* Закругленные углы ползунка */
+}
+
+ul.technologies-inner__list::-webkit-scrollbar-track {
+  background-color: $black; /* Цвет трека скроллбара */
+}
+
+//.technologies-inner__list-item{
+//  cursor: grab;
+//}
+
+
+.swiper-advantages{
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.swiper-reviews{
+  width: 100%;
+  overflow: hidden;
+}
+
+.contact{
+  margin: 32px 0;
+  &-inner{
+    margin: 32px 0;
+    &__form-wrap{
+      border-radius: 32px;
+      background-color: $violet;
+      padding: 32px 26.5px;
+      background-image: url("../images/decor-3.svg");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-position-y: 20px;
+      &-title{
+        color: $white;
+        font-size: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 0 10px 0;
+        text-align: center;
+      }
+      &-descr{
+        color: $white;
+        text-align: center;
+        font-family: Poppins,sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 0 0 32px 0;
+      }
+      &-box{
+        margin: 0 0 12px 0;
+      }
+      &-input{
+        border-radius: 16px;
+        border: 2px solid $black;
+        padding: 13px 16px;
+        background-color: $violet;
+        width: 100%;
+        margin: 0 0 6px 0;
+        color: $white;
+        outline: none;
+      }
+      &-textarea{
+        padding: 20px 16px;
+        height: 88px;
+        resize: none;
+      }
+      &-btn{
+        border-radius: 32px;
+        background: $white;
+        color: $violet;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+
+      }
+    }
+  }
+}
+
+.contact-inner__form-wrap-input::placeholder{
+  color: $white;
+  font-size: 12px;
+  font-weight: 600;
+}
+.contact-inner__form-wrap-input:focus-visible {
+  border: 2px solid $white;
+}
+
+.footer{
+
 }

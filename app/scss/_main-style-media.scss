@@ -220,7 +220,6 @@
     width: fit-content;
   }
 
-
   .technologies{
     margin: 84px 0;
     &-inner{
@@ -231,6 +230,40 @@
         gap: 50px;
         &-item-img {
           width: 110px;
+        }
+      }
+    }
+  }
+
+  .contact{
+    margin: 64px 0;
+    &-inner{
+      margin: 64px 0;
+      &__form-wrap{
+        background-position-y: 36px;
+        padding: 64px;
+        background-size: 633px;
+        &-title{
+          font-size: 64px;
+        }
+        &-descr{
+          font-size: 16px;
+          margin: 0 0 56px 0;
+        }
+        &-box{
+          margin: 0 0 16px 0;
+        }
+        &-input{
+          padding: 17px 16px;
+          margin: 0 0 5px 0;
+        }
+        &-textarea{
+          height: 190px;
+        }
+        &-btn{
+          font-size: 22px;
+          width: 280px;
+          margin: auto;
         }
       }
     }
@@ -445,6 +478,10 @@
     height: auto !important;
     padding: 53px 50px;
   }
+
+  .contact-inner__form-wrap {
+    margin: 0 220px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .title-descr__inner-decor-2 {
@@ -489,6 +526,10 @@
       }
     }
   }
+  .contact-inner__form-wrap {
+    margin: 0 320px;
+  }
+
 }
 
 @media screen and (min-width: 1920px) {
@@ -573,12 +614,48 @@
         align-items: center;
         gap: 55px !important;
         &-item{
-          width: 130px !important;
+          width: 110px !important;
         }
         &-item-img {
-          width: 130px;
+          width: 110px;
         }
       }
     }
+  }
+  .contact{
+    margin: 64px 0;
+    &-inner{
+      margin: 64px 0;
+      &__form-wrap{
+        background-position-y: 36px;
+        padding: 115px;
+        background-size: 1050px;
+        margin: 0 200px;
+        &-title{
+          font-size: 100px;
+          margin: 0 0 42px 0;
+        }
+        &-descr{
+          font-size: 22px;
+          margin: 0 0 100px 0;
+        }
+        &-box{
+          margin: 0 0 20px 0;
+        }
+        &-input{
+          padding: 25px 17px;
+          margin: 0 0 10px 0;
+          font-size: 28px;
+        }
+        &-btn{
+          font-size: 25px;
+          width: 315px;
+          padding: 22px;
+        }
+      }
+    }
+  }
+  .contact-inner__form-wrap-input::placeholder{
+    font-size: 22px;
   }
 }
