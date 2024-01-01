@@ -6,55 +6,120 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AlK</title>
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 
-    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/swiper@10.3.1/modules/effect-fade.min.css" rel="stylesheet">
 </head>
 <body class="body">
-<canvas></canvas>
+<canvas width="100%" height="100vh"></canvas>
 <header class="header">
     <div class="container">
         <div class="header-inner">
             <a href="" class="">
-                <img src="images/logo.svg" alt="" class="header-inner__link-logo">
+                <svg class="header-inner__link-logo" width="198" height="78">
+                    <use href="./images/icons.svg#icon-logo"></use>
+                </svg>
             </a>
             <div class="header-inner__btns">
-            <button class="header-inner__btn header-inner__btn-1">
-               EN
-            </button>
-            <button class="header-inner__btn">
-                <svg width="53" height="33" viewBox="0 0 53 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="4" y="4" width="28.2857" height="2.43902" fill="#FDF9F9"/>
-                    <rect x="4" y="14.9757" width="45" height="3.04878" fill="#FDF9F9"/>
-                    <rect x="4" y="26.5609" width="36.6429" height="2.43902" fill="#FDF9F9"/>
-                </svg>
-            </button>
+                <button class="header-inner__btn header-inner__btn-1">
+                    EN
+                </button>
+                <button class="header-inner__btn js-open-menu" data-modal-open>
+                    <svg class="header-inner__link-logo" width="80" height="50">
+                        <use href="./images/icons.svg#icon-burger-menu"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
 </header>
+<div class="mobile-menu js-menu-container " data-modal>
+    <div class="mobile-menu-container">
+        <button type="button" class="modal-btn-close js-close-menu" data-modal-close>
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="50" viewBox="0 0 60 50" fill="none">
+                <rect width="53.6385" height="3.76411" transform="matrix(0.751421 -0.659823 0.751421 0.659823 16 35.3919)" fill="#FDF9F9"/>
+                <rect width="41.4052" height="3.76411" transform="matrix(0.751421 -0.659823 0.751421 0.659823 2 47.5164)" fill="#FDF9F9"/>
+                <rect width="67.0351" height="4.62055" transform="matrix(0.833958 0.551827 -0.651238 0.758874 3.55176 4.77673)" fill="#FDF9F9"/>
+            </svg>
+        </button>
+        <div class="footer-inner">
+            <div class="footer-inner__logo">
+                <a href="" class="header-inner__link-logo">
+                    <svg class="" width="298" height="78">
+                        <use href="./images/icons.svg#icon-logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer-menu__wrapp">
+                <div class="footer-menu">
+                    <h3 class="footer-menu-title">Menu</h3>
+                    <a class="footer-menu-link">About Us</a>
+                    <a class="footer-menu-link"> Advantages</a>
+                    <a class="footer-menu-link"> Work Stages</a>
+                    <a class="footer-menu-link">Services</a>
+                    <a class="footer-menu-link">Portfolio</a>
+                    <a class="footer-menu-link">Contact Us</a>
+                </div>
 
+
+                <div class="footer-menu">
+                    <h3 class="footer-menu-title">Follow Us </h3>
+                    <a class="footer-menu-link">
+                        <svg class="footer-menu-icons" width="35" height="35">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                        <span>LinkedIn</span> </a>
+                    <a class="footer-menu-link">
+                        <svg class="footer-menu-icons" width="35" height="35">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                        <span>Instagram</span></a>
+                    <a class="footer-menu-link">
+                        <img class="footer-menu-icons" src="./images/dou.png" alt="">
+                        <span>DOU</span></a>
+                    <a class="footer-menu-link">
+                        <svg class="footer-menu-icons" width="35" height="35">
+                            <use href="./images/icons.svg#icon-gmail"></use>
+                        </svg>
+                        <span>Gmail</span></a>
+                </div>
+            </div>
+
+            <div class="hero-btns footer-btns">
+                <a class="hero-inner__btn button hero-btn-1" href="">Order project</a>
+                <a class="hero-inner__btn button hero-btn-2" href="">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
 <main>
     <section class="hero">
         <div class="container">
             <div class="hero-inner">
                 <div class="section-caption">
-                    <svg class="section-svg" width="7" height="28" viewBox="0 0 7 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="7" height="28" rx="3.5" fill="#FDF9F9"/>
+                    <svg class="section-svg" width="10" height="40">
+                        <use href="./images/icons.svg#icon-line-decor"></use>
                     </svg>
                     <div class="number-section">01</div>
                     <div class="number-name">About us</div>
                 </div>
                 <h1 class="hero-inner__title">web space</h1>
-                <div class="hero-inner__caption">Our talented employees use the latest programming languages, frameworks, and methodologies to craft robust, and secure software solutions that streamline operations, enhance productivity, and drive business growth.</div>
-               <div class="hero-btns">
-                <a class="hero-inner__btn button hero-btn-1" href="">Order project</a>
-                <a class="hero-inner__btn button hero-btn-2" href="">Learn more</a>
-               </div>
+                <div class="hero-inner__caption">Our talented employees use the latest programming languages,
+                    frameworks, and methodologies to craft robust, and secure software solutions that streamline
+                    operations, enhance productivity, and drive business growth.
+                </div>
+                <div class="hero-btns">
+                    <a class="hero-inner__btn button hero-btn-1" href="">Order project</a>
+                    <a class="hero-inner__btn button hero-btn-2" href="">Learn more</a>
+                </div>
             </div>
         </div>
     </section>
@@ -63,8 +128,8 @@
         <div class="container">
             <div class="advantages-inner">
                 <div class="section-caption">
-                    <svg class="section-svg" width="7" height="28" viewBox="0 0 7 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="7" height="28" rx="3.5" fill="#FDF9F9"/>
+                    <svg class="section-svg" width="10" height="40">
+                        <use href="./images/icons.svg#icon-line-decor"></use>
                     </svg>
                     <div class="number-section">02</div>
                     <div class="number-name violet">Advantages</div>
@@ -74,95 +139,103 @@
                         <li class="advantages-inner__list-item swiper-slide">
                             <div class="advantages-inner__list-item-num">01</div>
                             <h2 class="advantages-inner__list-item-title">Workforce</h2>
-                            <p class="advantages-inner__list-item-descr">Our talented professionals are drawn to the industry due to the exciting and dynamic nature of IT work.</p>
+                            <p class="advantages-inner__list-item-descr">Our talented professionals are drawn to the
+                                industry due to the exciting and dynamic nature of IT work.</p>
                         </li>
                         <li class="advantages-inner__list-item swiper-slide">
                             <div class="advantages-inner__list-item-num">02</div>
                             <h2 class="advantages-inner__list-item-title">Efficiency</h2>
-                            <p class="advantages-inner__list-item-descr">Our IT solutions can significantly improve the efficiency of businesses.</p>
+                            <p class="advantages-inner__list-item-descr">Our IT solutions can significantly improve the
+                                efficiency of businesses.</p>
                         </li>
                         <li class="advantages-inner__list-item swiper-slide">
                             <div class="advantages-inner__list-item-num">03</div>
                             <h2 class="advantages-inner__list-item-title">Global Reach</h2>
-                            <p class="advantages-inner__list-item-descr">Technology transcends geographical boundaries, allowing our IT company to provide services to clients worldwide.  </p>
+                            <p class="advantages-inner__list-item-descr">Technology transcends geographical boundaries,
+                                allowing our IT company to provide services to clients worldwide. </p>
                         </li>
                         <li class="advantages-inner__list-item swiper-slide">
                             <div class="advantages-inner__list-item-num">04</div>
                             <h2 class="advantages-inner__list-item-title">Social Impact</h2>
-                            <p class="advantages-inner__list-item-descr">Our company has the potential to create a positive social impact by developing technology solutions that address societal challenges.</p>
+                            <p class="advantages-inner__list-item-descr">Our company has the potential to create a
+                                positive social impact by developing technology solutions that address societal
+                                challenges.</p>
                         </li>
                     </ul>
-            </div></div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="title-descr">
         <div class="container">
             <div class="title-descr__inner">
-                <img class="title-descr__inner-decor-1" src="images/decor-1.svg" alt="">
-            The best customer service is when end users don’t need to reach out to the help desk
-                <img  class="title-descr__inner-decor-2" src="images/decor-2.svg" alt="">
+                <svg class="title-descr__inner-decor-1" width="71" height="75">
+                    <use href="./images/icons.svg#icon-snowflake1"></use>
+                </svg>
+                The best customer service is when end users don’t need to reach out to the help desk
+                <svg class="title-descr__inner-decor-2" width="56" height="60">
+                    <use href="./images/icons.svg#icon-snowflake2"></use>
+                </svg>
             </div>
-    </div>
-</section>
+        </div>
+    </section>
 
     <section class="work-stages">
         <div class="container">
             <div class="work-stages-inner">
                 <div class="section-caption">
-                    <svg class="section-svg" width="7" height="28" viewBox="0 0 7 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="7" height="28" rx="3.5" fill="#FDF9F9"/>
+                    <svg class="section-svg" width="10" height="40">
+                        <use href="./images/icons.svg#icon-line-decor"></use>
                     </svg>
                     <div class="number-section">03</div>
                     <div class="number-name work-stages-number-name">Work stages</div>
                 </div>
                 <div class=" swiper-work-stages">
-                   <ul class="work-stages-inner__list  ">
-                       <li class="work-stages-inner__list-item ">
-                           <div class="work-stages-inner__list-item-num">/01</div>
-                           <svg width="100%" height="3" viewBox="0 0 100% 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                               <line y1="1.5" x2="100%" y2="1.5" stroke="#FDFDFD" stroke-width="3"/>
-                           </svg>
-                           <div class="work-stages-inner__list-item-content">
-                               <div class="work-stages-inner__list-item-title">Planning and Strategy</div>
-                               <div class="work-stages-inner__list-item-descr">Based on the gathered requirements, the our company formulates a comprehensive plan and strategy. </div>
+                    <ul class="work-stages-inner__list  ">
+                        <li class="work-stages-inner__list-item ">
+                            <div class="work-stages-inner__list-item-num">/01</div>
+                            <div class="work-stages-inner__list-item-content">
+                                <div class="work-stages-inner__list-item-title">Planning and Strategy</div>
+                                <div class="work-stages-inner__list-item-descr">Based on the gathered requirements, the
+                                    our company formulates a comprehensive plan and strategy.
+                                </div>
                             </div>
-                       </li>
-                       <li class="work-stages-inner__list-item ">
-                           <div class="work-stages-inner__list-item-num">/02</div>
-                           <svg width="100%" height="3" viewBox="0 0 100% 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                               <line y1="1.5" x2="100%" y2="1.5" stroke="#FDFDFD" stroke-width="3"/>
-                           </svg>
-                           <div class="work-stages-inner__list-item-content">
-                               <div class="work-stages-inner__list-item-title">Design and Development</div>
-                               <div class="work-stages-inner__list-item-descr">In this stage, our team begins designing and developing the solution. We involve activities like creating software architecture, coding,
-                                   UI/UX design etc.</div>
-                           </div>
-                       </li>
-                       <li class="work-stages-inner__list-item ">
-                           <div class="work-stages-inner__list-item-num">/03</div>
-                           <svg width="100%" height="3" viewBox="0 0 100% 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                               <line y1="1.5" x2="100%" y2="1.5" stroke="#FDFDFD" stroke-width="3"/>
-                           </svg>
-                           <div class="work-stages-inner__list-item-content">
-                               <div class="work-stages-inner__list-item-title">Quality Assurance</div>
-                               <div class="work-stages-inner__list-item-descr">Once the initial development
-                                   is complete, the IT company conducts different types of  testing and quality assurance activities. </div>
-                           </div>
-                       </li>
-                       <li class="work-stages-inner__list-item ">
-                           <div class="work-stages-inner__list-item-num">/04</div>
-                           <svg width="100%" height="3" viewBox="0 0 100% 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                               <line y1="1.5" x2="100%" y2="1.5" stroke="#FDFDFD" stroke-width="3"/>
-                           </svg>
-                           <div class="work-stages-inner__list-item-content">
-                               <div class="work-stages-inner__list-item-title">Support and Maintenance</div>
-                               <div class="work-stages-inner__list-item-descr">Post-implementation, the IT company provides ongoing support and maintenance services. This includes applying updates and
-                                   up-to-date.</div>
-                           </div>
-                       </li>
-                   </ul>
-            </div>
+                        </li>
+                        <li class="work-stages-inner__list-item ">
+                            <div class="work-stages-inner__list-item-num">/02</div>
+                            <div class="work-stages-inner__list-item-content">
+                                <div class="work-stages-inner__list-item-title">Design and Development</div>
+                                <div class="work-stages-inner__list-item-descr">In this stage, our team begins designing
+                                    and developing the solution. We involve activities like creating software
+                                    architecture, coding,
+                                    UI/UX design etc.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="work-stages-inner__list-item ">
+                            <div class="work-stages-inner__list-item-num">/03</div>
+                            <div class="work-stages-inner__list-item-content">
+                                <div class="work-stages-inner__list-item-title">Quality Assurance</div>
+                                <div class="work-stages-inner__list-item-descr">Once the initial development
+                                    is complete, the IT company conducts different types of testing and quality
+                                    assurance activities.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="work-stages-inner__list-item ">
+                            <div class="work-stages-inner__list-item-num">/04</div>
+                            <div class="work-stages-inner__list-item-content">
+                                <div class="work-stages-inner__list-item-title">Support and Maintenance</div>
+                                <div class="work-stages-inner__list-item-descr">Post-implementation, the IT company
+                                    provides ongoing support and maintenance services. This includes applying updates
+                                    and
+                                    up-to-date.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -170,8 +243,8 @@
     <section class="services">
         <div class="container">
             <div class="section-caption">
-                <svg class="section-svg" width="7" height="28" viewBox="0 0 7 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="7" height="28" rx="3.5" fill="#FDF9F9"/>
+                <svg class="section-svg" width="10" height="40">
+                    <use href="./images/icons.svg#icon-line-decor"></use>
                 </svg>
                 <div class="number-section">04</div>
                 <div class="number-name violet">Services</div>
@@ -182,7 +255,9 @@
                     <div class="services-inner__content-box services-inner__content-box-1">
                         <div class="services-inner__content-title">Design</div>
                         <div class="services-inner__content-descr services-inner__content-descr-1">
-                            In our team you will find designers specializing in UI/UX, Graphic, Motion and 3D design. Our designers continuously stay informed about the latest design trends and emerging technologies.
+                            In our team you will find designers specializing in UI/UX, Graphic, Motion and 3D design.
+                            Our designers continuously stay informed about the latest design trends and emerging
+                            technologies.
                         </div>
                         <img src="images/services-1.png" alt="" class="services-inner__content-decor-1">
 
@@ -191,9 +266,12 @@
                 <div class="services-inner__content services-inner__content-2">
 
                     <div class="services-inner__content-box services-inner__content-box-2">
+
                         <div class="services-inner__content-title">Development</div>
                         <div class="services-inner__content-descr services-inner__content-descr-2">
-                            Our development skills demonstrate our experience in creating customized software solutions, web and mobile applications, and integrating systems to meet the unique needs of businesses in various industries.
+                            Our development skills demonstrate our experience in creating customized software solutions,
+                            web and mobile applications, and integrating systems to meet the unique needs of businesses
+                            in various industries.
                         </div>
                     </div>
                 </div>
@@ -201,7 +279,9 @@
                     <div class="services-inner__content-box services-inner__content-box-3">
                         <div class="services-inner__content-title">SEo</div>
                         <div class="services-inner__content-descr services-inner__content-descr-3">
-                            We perform technical optimizations to ensure that a website is properly crawled and indexed by search engines.                        </div>
+                            We perform technical optimizations to ensure that a website is properly crawled and indexed
+                            by search engines.
+                        </div>
                     </div>
                     <img src="images/services-2.png" alt="" class="services-inner__content-decor-2">
                 </div>
@@ -212,56 +292,57 @@
     <section class="technologies">
         <div class="container">
             <div class="section-caption">
-                <svg class="section-svg" width="7" height="28" viewBox="0 0 7 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="7" height="28" rx="3.5" fill="#FDF9F9"/>
+                <svg class="section-svg" width="10" height="40">
+                    <use href="./images/icons.svg#icon-line-decor"></use>
                 </svg>
                 <div class="number-section">05</div>
                 <div class="number-name ">Technologies</div>
             </div>
             <div class="">
-            <div class="technologies-inner slider-container">
-                <ul class="technologies-inner__list slider">
-                    <li class="technologies-inner__list-item slide">
-                        <img src="images/tech-1.png" alt="" class="technologies-inner__list-item-img">
-                    </li>
-                    <li class="technologies-inner__list-item slide">
-                        <img src="images/tech-9.png" alt="" class="technologies-inner__list-item-img">
-                    </li>
-                    <li class="technologies-inner__list-item slide">
-                        <img src="images/tech-2.png" alt="" class="technologies-inner__list-item-img">
-                    </li>
-                    <li class="technologies-inner__list-item slide">
-                        <img src="images/tech-3.png" alt="" class="technologies-inner__list-item-img">
-                    </li>
-                    <li class="technologies-inner__list-item slide">
-                        <img src="images/tech-4.svg" alt="" class="technologies-inner__list-item-img">
-                    </li>
-                    <li class="technologies-inner__list-item slide">
-                        <img src="images/tech-5.svg" alt="" class="technologies-inner__list-item-img">
-                    </li>
-                    <li class="technologies-inner__list-item slide">
-                        <img src="images/tech-6.svg" alt="" class="technologies-inner__list-item-img">
-                    </li>
-                    <li class="technologies-inner__list-item slide">
-                        <img src="images/tech-7.png" alt="" class="technologies-inner__list-item-img">
-                    </li>
-                    <li class="technologies-inner__list-item slide">
-                        <img src="images/tech-8.png" alt="" class="technologies-inner__list-item-img">
-                    </li>
-                    <li class="technologies-inner__list-item slide">
-                        <img src="images/tech-9.svg" alt="" class="technologies-inner__list-item-img">
-                    </li>
+                <div class="technologies-inner slider-container">
+                    <ul class="technologies-inner__list slider">
+                        <li class="technologies-inner__list-item slide">
+                            <img src="images/tech-1.png" alt="" class="technologies-inner__list-item-img">
+                        </li>
+                        <li class="technologies-inner__list-item slide">
+                            <img src="images/tech-9.png" alt="" class="technologies-inner__list-item-img">
+                        </li>
+                        <li class="technologies-inner__list-item slide">
+                            <img src="images/tech-2.png" alt="" class="technologies-inner__list-item-img">
+                        </li>
+                        <li class="technologies-inner__list-item slide">
+                            <img src="images/tech-3.png" alt="" class="technologies-inner__list-item-img">
+                        </li>
+                        <li class="technologies-inner__list-item slide">
+                            <img src="images/tech-4.svg" alt="" class="technologies-inner__list-item-img">
+                        </li>
+                        <li class="technologies-inner__list-item slide">
+                            <img src="images/tech-5.svg" alt="" class="technologies-inner__list-item-img">
+                        </li>
+                        <li class="technologies-inner__list-item slide">
+                            <img src="images/tech-6.svg" alt="" class="technologies-inner__list-item-img">
+                        </li>
+                        <li class="technologies-inner__list-item slide">
+                            <img src="images/tech-7.png" alt="" class="technologies-inner__list-item-img">
+                        </li>
+                        <li class="technologies-inner__list-item slide">
+                            <img src="images/tech-8.png" alt="" class="technologies-inner__list-item-img">
+                        </li>
+                        <li class="technologies-inner__list-item slide">
+                            <img src="images/tech-9.svg" alt="" class="technologies-inner__list-item-img">
+                        </li>
 
-                </ul>
-            </div></div>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="portfolio">
         <div class="container">
             <div class="section-caption">
-                <svg class="section-svg" width="7" height="28" viewBox="0 0 7 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="7" height="28" rx="3.5" fill="#FDF9F9"/>
+                <svg class="section-svg" width="10" height="40">
+                    <use href="./images/icons.svg#icon-line-decor"></use>
                 </svg>
                 <div class="number-section">06</div>
                 <div class="number-name violet">Portfolio</div>
@@ -271,34 +352,46 @@
                     <img src="images/project-1.jpg" alt="" class="portfolio-inner__img">
                     <div class="portfolio-inner__project-opt">
                         <div class="portfolio-inner__project-name">Name</div>
-                       <a class="portfolio-inner__project-btn"> <img src="images/arrow.svg" alt="" class="portfolio-inner__project-arrow"></a>
+                        <a class="portfolio-inner__project-btn">
+                            <svg class="" width="40" height="40">
+                                <use href="./images/icons.svg#icon-arrow-top"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div class="portfolio-inner__project">
                     <img src="images/project-1.jpg" alt="" class="portfolio-inner__img">
                     <div class="portfolio-inner__project-opt">
                         <div class="portfolio-inner__project-name">Name</div>
-                        <a class="portfolio-inner__project-btn"> <img src="images/arrow.svg" alt="" class="portfolio-inner__project-arrow"></a>
+                        <a class="portfolio-inner__project-btn">
+                            <svg class="" width="40" height="40">
+                                <use href="./images/icons.svg#icon-arrow-top"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div class="portfolio-inner__project">
                     <img src="images/project-1.jpg" alt="" class="portfolio-inner__img">
                     <div class="portfolio-inner__project-opt">
                         <div class="portfolio-inner__project-name">Name</div>
-                        <a class="portfolio-inner__project-btn"> <img src="images/arrow.svg" alt="" class="portfolio-inner__project-arrow"></a>
+                        <a class="portfolio-inner__project-btn">
+                            <svg class="" width="40" height="40">
+                                <use href="./images/icons.svg#icon-arrow-top"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
 
             </ul>
-                <a class="portfolio-inner-btn button" href="">View more</a>
+            <a class="portfolio-inner-btn button" href="">View more</a>
         </div>
     </section>
 
     <section class="reviews">
         <div class="container">
             <div class="section-caption">
-                <svg class="section-svg" width="7" height="28" viewBox="0 0 7 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="7" height="28" rx="3.5" fill="#FDF9F9"/>
+                <svg class="section-svg" width="10" height="40">
+                    <use href="./images/icons.svg#icon-line-decor"></use>
                 </svg>
                 <div class="number-section">07</div>
                 <div class="number-name ">Reviews</div>
@@ -309,24 +402,32 @@
                     <li class="reviews-inner__list-item advantages-inner__list-item swiper-slide">
                         <div class="reviews-inner__list-item-num advantages-inner__list-item-num">01</div>
                         <h2 class="reviews-inner__list-item-title advantages-inner__list-item-title">Mary Li</h2>
-                        <p class="reviews-inner__list-item-descr advantages-inner__list-item-descr">ALK is an exceptional IT company! Their team of experts consistently delivers innovative solutions that have greatly benefited our business. They are highly skilled in various technologies and always stay up to date with the latest industry trends.</p>
+                        <p class="reviews-inner__list-item-descr advantages-inner__list-item-descr">ALK is an
+                            exceptional IT company! Their team of experts consistently delivers innovative solutions
+                            that have greatly benefited our business. They are highly skilled in various technologies
+                            and always stay up to date with the latest industry trends.</p>
                         <a href="" class="reviews-inner__list-item-btn">Load more</a>
                     </li>
                     <li class="reviews-inner__list-item advantages-inner__list-item swiper-slide">
                         <div class="reviews-inner__list-item-num advantages-inner__list-item-num">02</div>
                         <h2 class="reviews-inner__list-item-title advantages-inner__list-item-title">Mary Li</h2>
-                        <p class="reviews-inner__list-item-descr advantages-inner__list-item-descr">Working with ALK companyhas been a breath of fresh air. They have a customer-centric approach and take the time to understand our business objectives.</p>
+                        <p class="reviews-inner__list-item-descr advantages-inner__list-item-descr">Working with ALK
+                            companyhas been a breath of fresh air. They have a customer-centric approach and take the
+                            time to understand our business objectives.</p>
                         <a href="" class="reviews-inner__list-item-btn">Load more</a>
                     </li>
                     <li class="reviews-inner__list-item advantages-inner__list-item swiper-slide">
                         <div class="reviews-inner__list-item-num advantages-inner__list-item-num">03</div>
                         <h2 class="reviews-inner__list-item-title advantages-inner__list-item-title">Mary Li</h2>
-                        <p class="reviews-inner__list-item-descr advantages-inner__list-item-descr">Working with ALK companyhas been a breath of fresh air. They have a customer-centric approach and take the time to understand our business objectives.</p>
+                        <p class="reviews-inner__list-item-descr advantages-inner__list-item-descr">Working with ALK
+                            companyhas been a breath of fresh air. They have a customer-centric approach and take the
+                            time to understand our business objectives.</p>
                         <a href="" class="reviews-inner__list-item-btn">Load more</a>
                     </li>
                     <li class="reviews-inner__list-item reviews-inner__list-item-r advantages-inner__list-item swiper-slide">
                         <h2 class="reviews-inner__list-item-title advantages-inner__list-item-title">Your review</h2>
-                        <p class="reviews-inner__list-item-descr advantages-inner__list-item-descr">Share your thoughts about working with our company!</p>
+                        <p class="reviews-inner__list-item-descr advantages-inner__list-item-descr">Share your thoughts
+                            about working with our company!</p>
                         <a href="" class="reviews-inner__list-item-btn reviews-inner__list-item-btn-y">Your review</a>
                     </li>
                 </ul>
@@ -337,88 +438,121 @@
     <section class="contact">
         <div class="container">
             <div class="section-caption">
-                <svg class="section-svg" width="7" height="28" viewBox="0 0 7 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="7" height="28" rx="3.5" fill="#FDF9F9"/>
+                <svg class="section-svg" width="10" height="40">
+                    <use href="./images/icons.svg#icon-line-decor"></use>
                 </svg>
                 <div class="number-section">08</div>
                 <div class="number-name violet">Contact us</div>
             </div>
 
-        <div class="contact-inner">
-        <div class="contact-inner__form-wrap">
-            <h3 class="contact-inner__form-wrap-title">Contact form</h3>
-            <p class="contact-inner__form-wrap-descr">Fill out this form and representatives ALK company will contact you personally</p>
-            <form action="">
-                <div class="contact-inner__form-wrap-box">
-                    <input type="text" class="contact-inner__form-wrap-input" placeholder="*Your name">
-                    <span></span>
-                </div>
+            <div class="contact-inner">
+                <div class="contact-inner__form-wrap">
+                    <h3 class="contact-inner__form-wrap-title">Contact form</h3>
+                    <p class="contact-inner__form-wrap-descr">Fill out this form and representatives ALK company will
+                        contact you personally</p>
+                    <form action="">
+                        <div class="contact-inner__form-wrap-box">
+                            <input type="text" class="contact-inner__form-wrap-input" placeholder="*Your name">
+                            <span></span>
+                        </div>
 
-                <div class="contact-inner__form-wrap-box">
-                    <input type="email" class="contact-inner__form-wrap-input" placeholder="*Your e-mail">
-                    <span></span>
+                        <div class="contact-inner__form-wrap-box">
+                            <input type="email" class="contact-inner__form-wrap-input" placeholder="*Your e-mail">
+                            <span></span>
+                        </div>
+                        <div class="contact-inner__form-wrap-box">
+                            <input type="tel" class="contact-inner__form-wrap-input" placeholder="*Your number">
+                            <span></span>
+                        </div>
+                        <div class="contact-inner__form-wrap-box">
+                            <textarea type="tel"
+                                      class="contact-inner__form-wrap-input contact-inner__form-wrap-textarea"
+                                      placeholder="Write something"></textarea>
+                        </div>
+                        <button class="contact-inner__form-wrap-btn button">Order project</button>
+                    </form>
                 </div>
-                <div class="contact-inner__form-wrap-box">
-                    <input type="tel" class="contact-inner__form-wrap-input" placeholder="*Your number">
-                    <span></span>
-                </div>
-                <div class="contact-inner__form-wrap-box">
-                    <textarea type="tel" class="contact-inner__form-wrap-input contact-inner__form-wrap-textarea" placeholder="Write something"></textarea>
-                </div>
-                <button class="contact-inner__form-wrap-btn button">Order project</button>
-            </form>
+            </div>
         </div>
-        </div> </div>
     </section>
 
 </main>
 <footer class="footer">
     <div class="container">
-        <a href="" class="">
-            <img src="images/logo.svg" alt="" class="header-inner__link-logo">
-        </a>
+        <div class="footer-inner">
+            <div class="footer-inner__logo">
+                <a href="" class="">
+                    <svg class="" width="298" height="78">
+                        <use href="./images/icons.svg#icon-logo"></use>
+                    </svg>
+                </a></div>
+            <div class="footer-menu__wrapp">
+                <div class="footer-menu">
+                    <h3 class="footer-menu-title">Menu</h3>
+                    <a class="footer-menu-link">About Us</a>
+                    <a class="footer-menu-link"> Advantages</a>
+                    <a class="footer-menu-link"> Work Stages</a>
+                    <a class="footer-menu-link">Services</a>
+                    <a class="footer-menu-link">Portfolio</a>
+                    <a class="footer-menu-link">Contact Us</a>
+                </div>
 
-        <div class="footer-menu">
-            <h3 class="footer-menu-title">Menu</h3>
-            <a  class="footer-menu-link">About Us</a>
-            <a class="footer-menu-link"> Advantages</a>
-            <a  class="footer-menu-link"> Work Stages</a>
-            <a  class="footer-menu-link">Services</a>
-            <a  class="footer-menu-link">Portfolio</a>
-            <a  class="footer-menu-link">Contact Us</a>
+                <div class="footer-menu">
+                    <h3 class="footer-menu-title">Follow Us </h3>
+                    <a class="footer-menu-link">
+                        <svg class="footer-menu-icons" width="35" height="35">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                        <span>LinkedIn</span> </a>
+                    <a class="footer-menu-link">
+                        <svg class="footer-menu-icons" width="35" height="35">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                        <span>Instagram</span></a>
+                    <a class="footer-menu-link">
+                        <img class="footer-menu-icons" src="./images/dou.png" alt="">
+                        <span>DOU</span></a>
+                    <a class="footer-menu-link">
+                        <svg class="footer-menu-icons" width="35" height="35">
+                            <use href="./images/icons.svg#icon-gmail"></use>
+                        </svg>
+                        <span>Gmail</span></a>
+                </div>
+            </div>
+
+            <div class="hero-btns footer-btns">
+                <a class="hero-inner__btn button hero-btn-1" href="">Order project</a>
+                <a class="hero-inner__btn button hero-btn-2" href="">Learn more</a>
+            </div>
         </div>
-
-
-        <div class="footer-menu">
-            <h3 class="footer-menu-title"> LinkedIn</h3>
-            <a  class="footer-menu-link">  Instagram</a>
-            <a class="footer-menu-link">  Behance</a>
-            <a  class="footer-menu-link"> DOU</a>
-        </div>
-
-
-
     </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-box">
+                <div class="footer-bottom__wrapp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                        <path d="M6.71967 7.74016C6.75301 7.52016 6.82634 7.32683 6.91967 7.16683C7.11967 6.7935 7.45967 6.60016 7.91967 6.5935C8.21967 6.5935 8.49301 6.72683 8.68634 6.92016C8.87301 7.12683 8.99967 7.4135 8.99967 7.70016H10.1997C10.1863 7.38683 10.1263 7.10016 9.99967 6.8335C9.89967 6.58016 9.74634 6.3535 9.54634 6.16683C8.57967 5.2735 6.78634 5.40016 5.96634 6.4135C5.10634 7.52683 5.08634 9.4735 5.95967 10.5868C6.76634 11.5802 8.53301 11.7202 9.49301 10.8335C9.69967 10.6668 9.86634 10.4602 9.99967 10.2202C10.1063 9.98016 10.1797 9.72683 10.1863 9.4535H8.99967C8.99967 9.5935 8.95301 9.72016 8.89301 9.8335C8.83301 9.96016 8.75301 10.0602 8.66634 10.1468C8.44634 10.3202 8.18634 10.4135 7.90634 10.4135C7.66634 10.4068 7.46634 10.3602 7.31301 10.2602C7.14018 10.163 7.0025 10.0136 6.91967 9.8335C6.58634 9.2335 6.63967 8.40016 6.71967 7.74016ZM7.99967 1.8335C4.33301 1.8335 1.33301 4.8335 1.33301 8.50016C1.68634 17.3468 14.333 17.3402 14.6663 8.50016C14.6663 4.8335 11.6663 1.8335 7.99967 1.8335ZM7.99967 13.8335C5.05967 13.8335 2.66634 11.4402 2.66634 8.50016C2.95967 1.42683 13.0397 1.42683 13.333 8.50016C13.333 11.4402 10.9397 13.8335 7.99967 13.8335Z"
+                              fill="#FEFEFE"/>
+                    </svg>
+                    <span>2023</span>
+                </div>
+
+                <div class="footer-bottom__created">Made in Ukraine</div>
+            </div>
+        </div>
+    </div>
+
 </footer>
-<!--<script src="js/main.js"></script>-->
+
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-<!--<script>-->
-<!--    $(function() {-->
-<!--        // Инициализация перетаскивания элементов-->
-<!--        $(".technologies-inner__list").sortable();-->
-<!--        $(".technologies-inner__list").disableSelection();-->
-<!--    });-->
-<!--</script>-->
-
+<script src="js/menu.js"></script>
 <script src="js/slider-3.js" type="module"></script>
-<script src="js/gradiet.js"></script>
-<!--<script src="js/advantages-slider.js" type="module" ></script>-->
-<!--<script src="js/slider-2.js" type="module"></script>-->
+<script src="js/gradient.js"></script>
+
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-const swiper2 = new Swiper('.swiper-technologies', {
+const swiper3 = new Swiper('.swiper-technologies', {
     autoplay: {
         delay: 3000,
     },
