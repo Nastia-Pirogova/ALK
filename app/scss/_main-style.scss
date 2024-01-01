@@ -1,5 +1,6 @@
 .hero{
   padding: 17px 0 50px 0;
+
   //height: 100vh;
   display: block;
   &-inner{
@@ -157,7 +158,8 @@ button.header-inner__btn.js-open-menu {
   cursor: pointer;
 }
 .advantages{
-  margin: 0 0 35px 0;
+  padding: 35px 0;
+  background-color: $black;
   &-inner{
     &__list{
       margin: 32px 0 0 0;
@@ -290,7 +292,14 @@ button.header-inner__btn.js-open-menu {
     }
   }
 }
-
+.services-inner__content-2 {
+  //background: rgb(0,0,0);
+  //background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(15,51,239,1) 22%, rgba(136,15,232,1) 76%, rgba(0,0,0,1) 100%);
+  //background-image: url("../images/decor-service.png");
+  //background-repeat: no-repeat;
+  //background-position: center;
+  //background-size: inherit;
+}
 .portfolio{
   margin: 64px 0 164px 0;
   &-inner{
