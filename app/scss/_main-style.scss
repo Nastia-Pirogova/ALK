@@ -311,7 +311,7 @@ button.header-inner__btn.js-open-menu {
     &__img{
       width: 100%;
       height: 319px;
-      object-fit: cover;
+      object-fit: contain;
     }
     &__project-opt {
       display: flex;
