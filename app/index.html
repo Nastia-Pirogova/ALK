@@ -19,91 +19,94 @@
     <link href="https://cdn.jsdelivr.net/npm/swiper@10.3.1/modules/effect-fade.min.css" rel="stylesheet">
 </head>
 <body class="body">
-<canvas id="parallaxCanvas"></canvas>
-<header class="header">
-    <div class="container">
-        <div class="header-inner">
-            <a href="" class="">
-                <svg class="header-inner__link-logo" width="198" height="78">
-                    <use href="./images/icons.svg#icon-logo"></use>
-                </svg>
-            </a>
-            <div class="header-inner__btns">
-                <button class="header-inner__btn header-inner__btn-1">
-                    UA
-                </button>
-                <button class="header-inner__btn js-open-menu" data-modal-open>
-                    <svg class="header-inner__link-logo" width="45" height="25">
-                        <use href="./images/icons.svg#icon-burger-menu"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-</header>
-<div class="mobile-menu js-menu-container " data-modal>
-    <div class="mobile-menu-container">
-        <button type="button" class="modal-btn-close js-close-menu" data-modal-close>
-            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="50" viewBox="0 0 60 50" fill="none">
-                <rect width="53.6385" height="3.76411"
-                      transform="matrix(0.751421 -0.659823 0.751421 0.659823 16 35.3919)" fill="#FDF9F9"/>
-                <rect width="41.4052" height="3.76411"
-                      transform="matrix(0.751421 -0.659823 0.751421 0.659823 2 47.5164)" fill="#FDF9F9"/>
-                <rect width="67.0351" height="4.62055"
-                      transform="matrix(0.833958 0.551827 -0.651238 0.758874 3.55176 4.77673)" fill="#FDF9F9"/>
-            </svg>
-        </button>
-        <div class="footer-inner">
-            <div class="footer-inner__logo">
-                <a href="" class="header-inner__link-logo">
-                    <svg class="" width="298" height="78">
+<div class="cursor"></div>
+<div class="cursor2"></div>
+
+<!--<canvas id="parallaxCanvas"></canvas>-->
+<div class="background-gradient">
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="" class="">
+                    <svg class="header-inner__link-logo" width="198" height="78">
                         <use href="./images/icons.svg#icon-logo"></use>
                     </svg>
                 </a>
-            </div>
-            <div class="footer-menu__wrapp">
-                <div class="footer-menu">
-                    <h3 class="footer-menu-title">Menu</h3>
-                    <a class="footer-menu-link">About Us</a>
-                    <a class="footer-menu-link"> Advantages</a>
-                    <a class="footer-menu-link"> Work Stages</a>
-                    <a class="footer-menu-link">Services</a>
-                    <a class="footer-menu-link">Portfolio</a>
-                    <a class="footer-menu-link">Contact Us</a>
-                </div>
-
-
-                <div class="footer-menu">
-                    <h3 class="footer-menu-title">Follow Us </h3>
-                    <a class="footer-menu-link">
-                        <svg class="footer-menu-icons" width="35" height="35">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
+                <div class="header-inner__btns">
+                    <button class="header-inner__btn header-inner__btn-1">
+                        UA
+                    </button>
+                    <button class="header-inner__btn js-open-menu" data-modal-open>
+                        <svg class="header-inner__link-logo" width="45" height="25">
+                            <use href="./images/icons.svg#icon-burger-menu"></use>
                         </svg>
-                        <span>LinkedIn</span> </a>
-                    <a class="footer-menu-link">
-                        <svg class="footer-menu-icons" width="35" height="35">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                        </svg>
-                        <span>Instagram</span></a>
-                    <a class="footer-menu-link">
-                        <img class="footer-menu-icons" src="./images/dou.png" alt="">
-                        <span>DOU</span></a>
-                    <a class="footer-menu-link">
-                        <svg class="footer-menu-icons" width="35" height="35">
-                            <use href="./images/icons.svg#icon-gmail"></use>
-                        </svg>
-                        <span>Gmail</span></a>
+                    </button>
                 </div>
             </div>
+        </div>
+    </header>
+    <div class="mobile-menu js-menu-container " data-modal>
+        <div class="mobile-menu-container">
+            <button type="button" class="modal-btn-close js-close-menu" data-modal-close>
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="50" viewBox="0 0 60 50" fill="none">
+                    <rect width="53.6385" height="3.76411"
+                          transform="matrix(0.751421 -0.659823 0.751421 0.659823 16 35.3919)" fill="#FDF9F9"/>
+                    <rect width="41.4052" height="3.76411"
+                          transform="matrix(0.751421 -0.659823 0.751421 0.659823 2 47.5164)" fill="#FDF9F9"/>
+                    <rect width="67.0351" height="4.62055"
+                          transform="matrix(0.833958 0.551827 -0.651238 0.758874 3.55176 4.77673)" fill="#FDF9F9"/>
+                </svg>
+            </button>
+            <div class="footer-inner">
+                <div class="footer-inner__logo">
+                    <a href="" class="header-inner__link-logo">
+                        <svg class="" width="298" height="78">
+                            <use href="./images/icons.svg#icon-logo"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer-menu__wrapp">
+                    <div class="footer-menu">
+                        <h3 class="footer-menu-title">Menu</h3>
+                        <a class="footer-menu-link">About Us</a>
+                        <a class="footer-menu-link"> Advantages</a>
+                        <a class="footer-menu-link"> Work Stages</a>
+                        <a class="footer-menu-link">Services</a>
+                        <a class="footer-menu-link">Portfolio</a>
+                        <a class="footer-menu-link">Contact Us</a>
+                    </div>
 
-            <div class="hero-btns footer-btns">
-                <a class="hero-inner__btn button hero-btn-1" href="">Order project</a>
-                <a class="hero-inner__btn button hero-btn-2" href="">Learn more</a>
+
+                    <div class="footer-menu">
+                        <h3 class="footer-menu-title">Follow Us </h3>
+                        <a class="footer-menu-link">
+                            <svg class="footer-menu-icons" width="35" height="35">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                            <span>LinkedIn</span> </a>
+                        <a class="footer-menu-link">
+                            <svg class="footer-menu-icons" width="35" height="35">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                            <span>Instagram</span></a>
+                        <a class="footer-menu-link">
+                            <img class="footer-menu-icons" src="./images/dou.png" alt="">
+                            <span>DOU</span></a>
+                        <a class="footer-menu-link">
+                            <svg class="footer-menu-icons" width="35" height="35">
+                                <use href="./images/icons.svg#icon-gmail"></use>
+                            </svg>
+                            <span>Gmail</span></a>
+                    </div>
+                </div>
+
+                <div class="hero-btns footer-btns">
+                    <a class="hero-inner__btn button hero-btn-1" href="">Order project</a>
+                    <a class="hero-inner__btn button hero-btn-2" href="">Learn more</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<main>
     <section class="hero">
         <div class="container">
             <div class="hero-inner">
@@ -126,7 +129,8 @@
             </div>
         </div>
     </section>
-
+</div>
+<main>
     <section class="advantages">
         <div class="container">
             <div class="advantages-inner">
@@ -342,6 +346,7 @@
     </section>
 
     <section class="portfolio">
+
         <div class="container">
             <div class="section-caption">
                 <svg class="section-svg" width="10" height="40">
@@ -563,7 +568,7 @@
 <script src="js/menu.js"></script>
 <script src="js/slider-3.js" type="module"></script>
 <script src="js/gradient.js"></script>
-
+<script src="js/cursor.js"></script>
 
 </body>
 </html>

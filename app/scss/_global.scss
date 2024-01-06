@@ -3,6 +3,7 @@
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  cursor: none;
 }
 
 .body {
@@ -11,7 +12,44 @@
   color: $white;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+
 }
+.background-gradient{
+  background-image: url("../images/Desktop.jpg") ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#parallaxCanvas{
+  width: 100%;
+  z-index: 100;
+  height: 100%;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//canvas {
+//  width: 100%;
+//  //height: 100vh;
+//  display: block;
+//  background: $black;
+//  background-position: center;
+//  background-size: cover !important;
+//}
+//canvas {
+//  position: absolute;
+//
+//  top: 50%;
+//  left: 50%;
+//  transform: translate(-50%, -50%);
+//
+//}
+
+
 
 ::selection {
   background-color: transparent;
@@ -102,23 +140,23 @@ a {
 }
 
 
-canvas {
-  width: 100%;
-  //height: 100vh;
-  display: block;
-  background: $black;
-  background-position: center;
-  background-size: cover !important;
-}
-canvas {
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-}
+//canvas {
+//  width: 100%;
+//  //height: 100vh;
+//  display: block;
+//  background: $black;
+//  background-position: center;
+//  background-size: cover !important;
+//}
+//canvas {
+//  position: absolute;
+//  z-index: -1;
+//  top: 50%;
+//  left: 50%;
+//  transform: translate(-50%, -50%);
+//  width: 100%;
+//  height: 100%;
+//}
 
 .violet{
   background-color: $violet;
@@ -136,3 +174,34 @@ canvas {
 ::-webkit-scrollbar-track {
   background: $grey;
 }
+
+
+.cursor{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  transform: scale(1);
+  background-color: white;
+  mix-blend-mode: difference;
+  transition-timing-function: ease-out;
+  transition-duration: 50ms;
+  z-index: 999;
+}
+
+.cursor2{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  transform: scale(3);
+  background-color: rgba(140, 15, 239, 0.50);
+  opacity: 0.5;
+  transition-timing-function: ease-out;
+  transition-duration: 200ms;
+}
+
+a,button{
+  z-index: 1000;
+}
+
